@@ -6,7 +6,7 @@ let userInput = prompt('Введите пароль');
 
 console.log(userInput);
 
-if (userInput === null) {
+if (!userInput) {
   message = 'Отменено пользователем!';
 } else if (userInput === ADMIN_PASSWORD) {
   message = 'Добро пожаловать!';
