@@ -5,7 +5,7 @@ let userInput = prompt('Какое количество дроидов Вы хо
 userInput = Number(userInput);
 console.log(userInput);
 
-if (userInput === 0) {
+if (!userInput) {
   console.log('Отменено пользователем!');
 } else {
   totalPrice = userInput * pricePerDroid;
